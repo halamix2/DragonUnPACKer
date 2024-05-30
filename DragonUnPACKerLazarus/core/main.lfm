@@ -1,33 +1,35 @@
 object frmMain: TfrmMain
-  Left = 602
-  Height = 452
-  Top = 178
-  Width = 622
+  Left = 1997
+  Height = 471
+  Top = 849
+  Width = 648
   Caption = 'frmMain'
-  ClientHeight = 432
-  ClientWidth = 622
+  ClientHeight = 471
+  ClientWidth = 648
+  DesignTimePPI = 100
   Menu = menuMain
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnShow = FormShow
-  LCLVersion = '0.9.29'
+  LCLVersion = '3.4.0.0'
   object StatusBar: TStatusBar
     Left = 0
-    Height = 23
-    Top = 409
-    Width = 622
+    Height = 21
+    Top = 450
+    Width = 648
     Panels = <>
   end
   object lstIndex: TVirtualStringTree
     Left = 0
-    Height = 330
-    Top = 26
-    Width = 176
+    Height = 368
+    Top = 27
+    Width = 183
     Align = alLeft
     DefaultText = 'Node'
     Header.AutoSizeIndex = 0
     Header.Columns = <>
-    Header.DefaultHeight = 17
+    Header.DefaultHeight = 18
+    Header.Height = 18
     Header.MainColumn = -1
     TabOrder = 1
   end
@@ -35,30 +37,31 @@ object frmMain: TfrmMain
     Cursor = crVSplit
     Left = 0
     Height = 5
-    Top = 356
-    Width = 622
+    Top = 395
+    Width = 648
     Align = alBottom
     ResizeAnchor = akBottom
   end
   object LogView: TLogTreeView
     Left = 0
-    Height = 48
-    Top = 361
-    Width = 622
+    Height = 50
+    Top = 400
+    Width = 648
     Align = alBottom
-    DefaultItemHeight = 17
     ReadOnly = True
     ScrollBars = ssAutoBoth
     ShowRoot = False
+    ShowTime = False
     TabOrder = 3
+    TimeFormat = 'hh:nn:ss:zzz'
     OnCustomDrawItem = LogViewCustomDrawItem
     Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoToolTips, tvoThemedDraw]
   end
   object lstView: TVirtualStringTree
-    Left = 181
-    Height = 330
-    Top = 26
-    Width = 322
+    Left = 188
+    Height = 368
+    Top = 27
+    Width = 336
     Align = alClient
     DefaultText = 'Node'
     Header.AutoSizeIndex = 0
@@ -66,7 +69,7 @@ object frmMain: TfrmMain
       item
         Position = 0
         Text = 'Name'
-        Width = 168
+        Width = 175
       end    
       item
         Position = 1
@@ -80,46 +83,47 @@ object frmMain: TfrmMain
         Position = 3
         Text = 'Description'
       end>
-    Header.DefaultHeight = 17
+    Header.DefaultHeight = 18
+    Header.Height = 22
     Header.Options = [hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
     TabOrder = 4
   end
   object Splitter2: TSplitter
-    Left = 176
-    Height = 330
-    Top = 26
+    Left = 183
+    Height = 368
+    Top = 27
     Width = 5
     AutoSnap = False
   end
   object Splitter3: TSplitter
-    Left = 503
-    Height = 330
-    Top = 26
+    Left = 524
+    Height = 368
+    Top = 27
     Width = 5
     Align = alRight
     ResizeAnchor = akRight
   end
   object Panel1: TPanel
-    Left = 508
-    Height = 330
-    Top = 26
-    Width = 114
+    Left = 529
+    Height = 368
+    Top = 27
+    Width = 119
     Align = alRight
     Caption = 'Panel1'
     TabOrder = 7
   end
   object ToolBar1: TToolBar
     Left = 0
-    Height = 26
+    Height = 27
     Top = 0
-    Width = 622
+    Width = 648
     Caption = 'ToolBar1'
     TabOrder = 8
   end
   object menuMain: TMainMenu
     Images = imgMenu
-    left = 8
-    top = 24
+    Left = 8
+    Top = 25
     object menuMain_File: TMenuItem
       Caption = '&File'
       object menuMain_File_Open: TMenuItem
@@ -226,7 +230,7 @@ object frmMain: TfrmMain
     end
   end
   object imgMenu: TImageList
-    left = 532
-    top = 36
+    Left = 554
+    Top = 38
   end
 end

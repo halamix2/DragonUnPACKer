@@ -24,14 +24,14 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, virtualtreeview_package, multiloglaz, Main, const_version,
-  SharedLogger, FileChannel,
+  Forms, virtualtreeview_package, MultiLog, Main, const_version,
+  FileChannel,
   sharedplugins, pluginsdrivers;
 
 {$R *.res}
 
 begin
-  Application.Title:='Dragon UnPACKer v'+DRAGONUNPACKER_VERSION+DRAGONUNPACKER_EDITION;
+  Application.Title:='Dragon UnPACKer v6.0.0';
   Application.Initialize;
   Logger.Channels.Add(TFileChannel.Create('drgunpack6.log'));
   Application.CreateForm(TfrmMain, frmMain);

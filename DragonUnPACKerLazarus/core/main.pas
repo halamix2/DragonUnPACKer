@@ -25,7 +25,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, Menus,
-  ComCtrls, ExtCtrls, VirtualTrees, logtreeview, SharedLogger, SharedPlugins;
+  ComCtrls, ExtCtrls, VirtualTrees, logtreeview, SharedPlugins, MultiLog;
 
 type
 
@@ -157,7 +157,7 @@ begin
   pngImage := TPortableNetworkGraphic.Create;
   try
     // Load image from PNG file
-    pngImage.LoadFromFile(getBaseDir()+'themes\'+theme+'\'+id+'.png');
+    pngImage.LoadFromFile(getBaseDir()+'themes/'+theme+'/'+id+'.png');
     // Replace it in the image list
     imgMenu.ReplaceMasked(index,pngImage,clLime);
     // Free the TPortableNetworkGraphic object

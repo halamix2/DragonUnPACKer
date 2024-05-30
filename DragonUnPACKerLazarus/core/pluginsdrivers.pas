@@ -31,7 +31,7 @@ unit PluginsDrivers;
 interface
 
 uses
-  Classes, SysUtils, commonTypes, DynLibs, SharedLogger;
+  Classes, SysUtils, commonTypes, DynLibs, MultiLog;
 
 type
 
@@ -131,7 +131,7 @@ var test: TlibHandle;
     test2: IDragonUnPACKerDriverPlugin;
 begin
 
-  test := SafeLoadLibrary(path+'\plugins\drv_default.d6d');
+  test := SafeLoadLibrary(path+'/plugins/drv_default.d6d');
   func := TProcGetDUDIDriver(GetProcedureAddress(test,'getDUDIDriver'));
   Logger.Send('Test',test);
   if (@func = nil) then

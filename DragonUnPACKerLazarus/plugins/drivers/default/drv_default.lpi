@@ -1,19 +1,17 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
+    <Version Value="12"/>
     <PathDelim Value="\"/>
-    <Version Value="7"/>
     <General>
       <Flags>
         <MainUnitHasCreateFormStatements Value="False"/>
         <MainUnitHasTitleStatement Value="False"/>
-        <UseDefaultCompilerOptions Value="True"/>
+        <MainUnitHasScaledStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
       </Flags>
-      <MainUnit Value="0"/>
-      <TargetFileExt Value=".exe"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
-      <ActiveWindowIndexAtStart Value="0"/>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
@@ -21,46 +19,51 @@
       <MajorVersionNr Value="6"/>
       <Language Value=""/>
       <CharSet Value=""/>
-      <StringTable Comments="Default Driver Plugin for Dragon UnPACKer 6" CompanyName="ElberethZone" FileDescription="Default Driver Plugin for Dragon UnPACKer 6" FileVersion="6.0.0.0" InternalName="drv_default" LegalCopyright="Mozilla Public Licence 1.1" LegalTrademarks="" OriginalFilename="drv_default.d6d" ProductName="Dragon UnPACKer" ProductVersion="6.0.0"/>
+      <StringTable Comments="Default Driver Plugin for Dragon UnPACKer 6" CompanyName="ElberethZone" FileDescription="Default Driver Plugin for Dragon UnPACKer 6" InternalName="drv_default" LegalCopyright="Mozilla Public Licence 1.1" OriginalFilename="drv_default.d6d" ProductName="Dragon UnPACKer" ProductVersion="6.0.0"/>
     </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
-      <IgnoreBinaries Value="False"/>
-      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
-      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
     </PublishOptions>
     <RunParams>
       <local>
-        <FormatVersion Value="1"/>
         <LaunchingApplication Use="True" PathPlusParams="E:\Developpement\dup-dev-6-compiled\drgunpack6.exe"/>
       </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication Use="True" PathPlusParams="E:\Developpement\dup-dev-6-compiled\drgunpack6.exe"/>
+          </local>
+        </Mode0>
+      </Modes>
     </RunParams>
     <Units Count="1">
       <Unit0>
         <Filename Value="drv_default.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="drv_default"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="0"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="3"/>
         <CursorPos X="21" Y="3"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit0>
     </Units>
     <JumpHistory Count="10" HistoryIndex="9">
       <Position1>
         <Filename Value="drv_default.lpr"/>
-        <Caret Line="24" Column="1" TopLine="1"/>
+        <Caret Line="24"/>
       </Position1>
       <Position2>
         <Filename Value="drv_default.lpr"/>
-        <Caret Line="23" Column="67" TopLine="1"/>
+        <Caret Line="23" Column="67"/>
       </Position2>
       <Position3>
         <Filename Value="drv_default.lpr"/>
-        <Caret Line="28" Column="6" TopLine="1"/>
+        <Caret Line="28" Column="6"/>
       </Position3>
       <Position4>
         <Filename Value="drv_default.lpr"/>
@@ -68,7 +71,7 @@
       </Position4>
       <Position5>
         <Filename Value="drv_default.lpr"/>
-        <Caret Line="28" Column="1" TopLine="3"/>
+        <Caret Line="28" TopLine="3"/>
       </Position5>
       <Position6>
         <Filename Value="drv_default.lpr"/>
@@ -76,11 +79,11 @@
       </Position6>
       <Position7>
         <Filename Value="drv_default.lpr"/>
-        <Caret Line="53" Column="1" TopLine="22"/>
+        <Caret Line="53" TopLine="22"/>
       </Position7>
       <Position8>
         <Filename Value="drv_default.lpr"/>
-        <Caret Line="14" Column="1" TopLine="1"/>
+        <Caret Line="14"/>
       </Position8>
       <Position9>
         <Filename Value="drv_default.lpr"/>
@@ -88,30 +91,24 @@
       </Position9>
       <Position10>
         <Filename Value="drv_default.lpr"/>
-        <Caret Line="6" Column="13" TopLine="1"/>
+        <Caret Line="6" Column="13"/>
       </Position10>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
-    <Version Value="8"/>
+    <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
       <Filename Value="E:\Developpement\dup-dev-6-compiled\plugins\drv_default.d6d"/>
     </Target>
     <SearchPaths>
-      <IncludeFiles Value="$(ProjOutDir)\"/>
+      <IncludeFiles Value="$(ProjOutDir)"/>
       <UnitOutputDirectory Value="E:\Developpement\dup-6-dev-lib\plugins\drivers\default\lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
-    <Parsing>
-      <SyntaxOptions>
-        <UseAnsiStrings Value="True"/>
-      </SyntaxOptions>
-    </Parsing>
     <CodeGeneration>
       <SmartLinkUnit Value="True"/>
-      <TargetProcessor Value="pentium4"/>
-      <TargetCPU Value="i386"/>
-      <TargetOS Value="Win32"/>
+      <TargetCPU Value="x86_64"/>
+      <TargetOS Value="linux"/>
       <Optimizations>
         <OptimizationLevel Value="3"/>
       </Optimizations>
@@ -126,12 +123,6 @@
         <ExecutableType Value="Library"/>
       </Options>
     </Linking>
-    <Other>
-      <CompilerMessages>
-        <UseMsgFile Value="True"/>
-      </CompilerMessages>
-      <CompilerPath Value="$(CompPath)"/>
-    </Other>
   </CompilerOptions>
   <Debugging>
     <Exceptions Count="3">
